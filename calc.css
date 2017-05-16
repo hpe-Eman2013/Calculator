@@ -1,0 +1,97 @@
+.container{
+    width:261px;
+    height:430px;
+    background-color: appworkspace;
+    box-shadow: 10px 5px;
+    border-radius: 25px;
+    margin: 0 auto;
+    position: relative;
+}
+.containerTitle {
+    position: absolute;
+    top:0px;
+    left: 20px;
+    font-size: 18px;
+    font-style: italic;
+}
+.displayBox{
+    width:220px;
+    height:80px;
+    border-radius: 5px;
+    margin: 0 auto;
+    position: relative;
+    top:55px;
+    font-size: 22pt;
+    text-align: right;
+    background-color: white;
+    overflow: hidden;
+}
+.displayBox p {
+	position: absolute;
+        padding: 5px;
+        right: 0px;
+}
+.buttonContainer{
+    width:260px;
+    position: relative;
+    top: 70px;
+    left: 15px;
+    margin: 0 auto;
+    display: inline-block;
+    float: left;
+}
+.numberBox {
+    width: 40px;
+    height: 40px;
+    background-color: buttonface;
+    border-radius: 5px;
+    position: relative;
+    float: left;
+    margin: 3px;
+}
+.numberBox p {
+    text-align: center;
+    font-size: 18pt;
+    position: relative;
+    top: 5px;
+    margin: 0 auto;
+}
+.numberBox:hover {
+    background-color: #4CAF50; /* Green */
+}
+.zeroBox {
+    width: 87px;
+    height: 40px;
+    background-color: buttonface;
+    border-radius: 5px;
+    position: relative;
+    float: left;
+    margin: 3px;
+}
+.zeroBox p {
+    text-align: center;
+    font-size: 18pt;
+    position: relative;
+    top: 5px;
+    margin: 0 auto;
+}
+.equalBox {
+    width: 40px;
+    height: 86px;
+    background-color: buttonface;
+    border-radius: 5px;
+    position: absolute;
+    margin: 3px;
+    top: 138px;
+    right: 30px;
+}
+.equalBox p {
+    text-align: center;
+    font-size: 18pt;
+    position: relative;
+    top: 30px;
+    margin: 0 auto;
+}
+.equalBox:hover {
+    background-color: #4CAF50; /* Green */
+}
