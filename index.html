@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Calculator</title>
+        <link href="calc.css" type="text/css" rel="stylesheet">
+        <script src="calc.js" language="JavaScript"></script>
+            
+    </head>
+    <body>
+        <div class="container"><p class="containerTitle">Calculator</p>
+            <div class="displayBox">
+                <p id="boxValue"></p>
+            </div>
+            <div class="buttonContainer">
+                <div class="numberBox"><p id="PlusMinus" onclick="javascript:plusMinus('boxValue');">+/-</p></div>
+                <div class="numberBox"><p id="Power" onclick="javascript:calculatePower('boxValue');">x<sup>2</sup></p></div>
+                <div class="numberBox"><p id="SqRoot" onclick="javascript:squareRoot('boxValue');">&radic;</p></div>
+                <div class="numberBox"><p id="Clear" onclick="javascript:clearTextBox('boxValue', true);">C</p></div>
+                <div class="numberBox"><p id="Backspace" onclick="javascript:backspace('boxValue');">&larr;</p></div>
+                <div class="numberBox"><p id="7" onclick="javascript:addToTextBox('boxValue', this.id);">7</p></div>
+                <div class="numberBox"><p id="8" onclick="javascript:addToTextBox('boxValue', this.id);">8</p></div>
+                <div class="numberBox"><p id="9" onclick="javascript:addToTextBox('boxValue', this.id);">9</p></div>
+                <div class="numberBox"><p id="13" onclick="javascript:storeOperator('boxValue', this.id);">/</p></div>
+                <div class="numberBox"><p id="14" onclick="javascript:convertPercent('boxValue', this.id);">%</p></div>
+                <div class="numberBox"><p id="4" onclick="javascript:addToTextBox('boxValue', this.id);">4</p></div>
+                <div class="numberBox"><p id="5" onclick="javascript:addToTextBox('boxValue', this.id);">5</p></div>
+                <div class="numberBox"><p id="6" onclick="javascript:addToTextBox('boxValue', this.id);">6</p></div>
+                <div class="numberBox"><p id="12" onclick="javascript:storeOperator('boxValue', this.id);">*</p></div>
+                <div class="numberBox"><p id="OneOver" onclick="javascript:convertOneOver('boxValue');">1/x</p></div>
+                <div class="numberBox"><p id="1" onclick="javascript:addToTextBox('boxValue', this.id);">1</p></div>
+                <div class="numberBox"><p id="2" onclick="javascript:addToTextBox('boxValue', this.id);">2</p></div>
+                <div class="numberBox"><p id="3" onclick="javascript:addToTextBox('boxValue', this.id);">3</p></div>
+                <div class="numberBox"><p id="11" onclick="javascript:storeOperator('boxValue', this.id);">-</p></div>
+                <div class="zeroBox"><p id="0" onclick="javascript:addToTextBox('boxValue', this.id);">0</p></div>
+                <div class="numberBox"><p id="." onclick="javascript:addToTextBox('boxValue', this.id);">.</p></div>
+                <div class="numberBox"><p id="10" onclick="javascript:storeOperator('boxValue', this.id);">+</p></div>
+                <div class="equalBox"><p id="Equal" onclick="javascript:calculateValue('boxValue');">=</p></div>
+            </div>
+            
+        </div>
+    </body>
+</html>
